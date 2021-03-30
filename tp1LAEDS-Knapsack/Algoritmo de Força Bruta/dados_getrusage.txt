@@ -1,0 +1,236 @@
+ALGORITMO DE FORÇA BRUTA
+Simulações para getrusage()
+
+---
+Entrada: 5
+
+Teste 1 
+***************************************************************
+Tempo de usuario: 0 segundos e 1029 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 0 segundos e 964 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Teste 3
+***************************************************************
+Tempo de usuario: 0 segundos e 741 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Entrada: 10
+
+
+Teste 1
+***************************************************************
+Tempo de usuario: 0 segundos e 610 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 0 segundos e 1219 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 0 segundos e 803 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Entrada: 15
+
+Teste 1
+***************************************************************
+Tempo de usuario: 0 segundos e 5101 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 0 segundos e 4042 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 0 segundos e 3337 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Entrada: 20
+
+Teste 1
+***************************************************************
+Tempo de usuario: 0 segundos e 88783 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 0 segundos e 89737 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 0 segundos e 88759 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Entrada: 24
+
+Teste 1
+***************************************************************
+Tempo de usuario: 1 segundos e 669365 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 1 segundos e 551251 microssegundos.
+Tempo de sistema: 0 segundos e 3998 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 1 segundos e 598101 microssegundos.
+Tempo de sistema: 0 segundos e 0 microssegundos.
+***************************************************************
+
+---
+Entrada: 25
+
+Teste 1
+***************************************************************
+Tempo de usuario: 3 segundos e 264257 microssegundos.
+Tempo de sistema: 0 segundos e 16020 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 3 segundos e 201149 microssegundos.
+Tempo de sistema: 0 segundos e 28010 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 2 segundos e 985336 microssegundos.
+Tempo de sistema: 0 segundos e 3996 microssegundos.
+***************************************************************
+
+
+---
+Entrada: 26
+
+Teste 1
+***************************************************************
+Tempo de usuario: 8 segundos e 700717 microssegundos.
+Tempo de sistema: 0 segundos e 7996 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 9 segundos e 383952 microssegundos.
+Tempo de sistema: 0 segundos e 31850 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 7 segundos e 153693 microssegundos.
+Tempo de sistema: 0 segundos e 59581 microssegundos.
+***************************************************************
+
+---
+Entrada: 27
+
+Teste 1
+***************************************************************
+Tempo de usuario: 13 segundos e 718480 microssegundos.
+Tempo de sistema: 0 segundos e 16045 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 13 segundos e 363379 microssegundos.
+Tempo de sistema: 0 segundos e 4005 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 14 segundos e 969030 microssegundos.
+Tempo de sistema: 0 segundos e 20081 microssegundos.
+***************************************************************
+
+---
+Entrada: 28
+
+Teste 1
+***************************************************************
+Tempo de usuario: 35 segundos e 589866 microssegundos.
+Tempo de sistema: 0 segundos e 393807 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 34 segundos e 300357 microssegundos.
+Tempo de sistema: 0 segundos e 112145 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 35 segundos e 86645 microssegundos.
+Tempo de sistema: 0 segundos e 100064 microssegundos.
+***************************************************************
+
+---
+Entrada: 29
+
+Teste 1
+***************************************************************
+Tempo de usuario: 67 segundos e 996432 microssegundos.
+Tempo de sistema: 0 segundos e 284202 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 66 segundos e 124489 microssegundos.
+Tempo de sistema: 0 segundos e 35989 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 66 segundos e 426293 microssegundos.
+Tempo de sistema: 0 segundos e 32107 microssegundos.
+***************************************************************
+
+---
+Entrada: 30
+
+Teste 1
+***************************************************************
+Tempo de usuario: 113 segundos e 842565 microssegundos.
+Tempo de sistema: 0 segundos e 476731 microssegundos.
+***************************************************************
+
+Teste 2
+***************************************************************
+Tempo de usuario: 120 segundos e 899370 microssegundos.
+Tempo de sistema: 0 segundos e 28117 microssegundos.
+***************************************************************
+
+Teste 3
+***************************************************************
+Tempo de usuario: 136 segundos e 222537 microssegundos.
+Tempo de sistema: 0 segundos e 180469 microssegundos.
+***************************************************************
