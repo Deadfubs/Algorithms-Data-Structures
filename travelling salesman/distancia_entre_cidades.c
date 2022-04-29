@@ -4,7 +4,7 @@
 #define INFINITO 99999
 #define MAX 100
 
-/* O programa está funcionando fazendo a impressão certa no terminal porém todos os casos estão dando errado no runcodes
+/* O programa estÃ¡ funcionando fazendo a impressÃ£o certa no terminal porÃ©m todos os casos estÃ£o dando errado no runcodes
     :( */
 
 /*A parte que propriamente executa o algoritmo de Djikstra foi feita com base no algoritmo do site:
@@ -13,24 +13,24 @@ typedef struct cidade{
     char nome_cidade[20];
 }Cidade;
 
-//Arco é uma estrutura do tipo dois vértices ligados por uma aresta
+//Arco Ã© uma estrutura do tipo dois vÃ©rtices ligados por uma aresta
 typedef struct arco{
     char nome_cidade_origem[20];
     char nome_cidade_destino[20];
     int distancia;
 }Arco;
 
-void djktra(int **G, int quant_cidades,int origem, int destino, Cidade *cidades){
+void djstriks(int **G, int quant_cidades,int origem, int destino, Cidade *cidades){
 
 	int distancias[quant_cidades], caminho[quant_cidades];
 	int visitado[quant_cidades], cont, mindistancia, proxVer, i, j;
 
-	//caminho[] e distancias[] guarda os caminhos e as distãncias entre o vértice de origem e todos os outros vértices
-    //cont grava a quantidade de vértices visitados até o momento
+	//caminho[] e distancias[] guarda os caminhos e as distÃ£ncias entre o vÃ©rtice de origem e todos os outros vÃ©rtices
+    //cont grava a quantidade de vÃ©rtices visitados atÃ© o momento
 
-    /* Faz as trocas das posições da matriz de adjacência onde os vértices
-    estão gravados com valo 0 para infinito, dessa forma aquela posição nunca será um caminho possível. Essa é uma maneira de identificar que não existe
-    estrada entre as cidades que representam essa posição na matriz.*/
+    /* Faz as trocas das posiÃ§Ãµes da matriz de adjacÃªncia onde os vÃ©rtices
+    estÃ£o gravados com valo 0 para infinito, dessa forma aquela posiÃ§Ã£o nunca serÃ¡ um caminho possÃ­vel. Essa Ã© uma maneira de identificar que nÃ£o existe
+    estrada entre as cidades que representam essa posiÃ§Ã£o na matriz.*/
 	for(i=0; i<quant_cidades; i++){
 		for(j=0; j<quant_cidades; j++){
 			if(G[i][j]==0){
@@ -39,7 +39,7 @@ void djktra(int **G, int quant_cidades,int origem, int destino, Cidade *cidades)
 		}
 	}
 
-	// Inicializa o caminho, as distancias e os vértices visitados
+	// Inicializa o caminho, as distancias e os vÃ©rtices visitados
 	for(i=0; i<quant_cidades; i++){
 		distancias[i]=G[origem][i];
 		caminho[i]=origem;
@@ -52,7 +52,7 @@ void djktra(int **G, int quant_cidades,int origem, int destino, Cidade *cidades)
 
 	while(cont<quant_cidades-1){
 		mindistancia=INFINITO;
-		// Acha o véritice de menor distância
+		// Acha o vÃ©ritice de menor distÃ¢ncia
 		for(i=0;i<quant_cidades;i++){
 			if((distancias[i] < mindistancia) && (!visitado[i])){
 				mindistancia=distancias[i];
@@ -94,7 +94,7 @@ void djktra(int **G, int quant_cidades,int origem, int destino, Cidade *cidades)
     printf("Distancia total: %d Km", distancias[destino]);
 }
 
-//Busca a posição da cidade na lista de cidades
+//Busca a posiÃ§Ã£o da cidade na lista de cidades
 int busca_posicao(char nome_cidade[], Cidade cidades[], int quant_cidades){
     for(int i=0; i<quant_cidades; i++){
         if(strcmp(nome_cidade, cidades[i].nome_cidade)==0){
@@ -104,7 +104,7 @@ int busca_posicao(char nome_cidade[], Cidade cidades[], int quant_cidades){
     return 0;
 }
 
-//Faz a matriz de adjacência
+//Faz a matriz de adjacÃªncia
 void FZ_Grafo(int **matriz, Arco arcos[], Cidade cidades[], int num_arestas, int quant_cidades){
     int aux1;
     int aux2;
@@ -116,7 +116,7 @@ void FZ_Grafo(int **matriz, Arco arcos[], Cidade cidades[], int num_arestas, int
     }
 }
 
-//Inicializa a matriz de adjacência com zeros
+//Inicializa a matriz de adjacÃªncia com zeros
 int **Aloca_matriz(int lin, int col){
 
     int **matriz = (int**)malloc(lin*sizeof(int*));
@@ -130,7 +130,7 @@ int **Aloca_matriz(int lin, int col){
     return matriz;
 }
 
-// Verifica se determinada cidade já foi adicionada na lista
+// Verifica se determinada cidade jÃ¡ foi adicionada na lista
 int verifica_exixtencia(Cidade cidades[], char nome_cidade[], int quant_cidades){
     for(int i=0; i < quant_cidades; i++){
         if(strcmp(nome_cidade, cidades[i].nome_cidade) == 0){
@@ -206,11 +206,11 @@ int main(){
 
     char cidade_origem[20], cidade_destino[20]; // As cidades que desejo saber o menor caminho
     int num_estradas;
-    Arco arcos[MAX]; // O arco é formado por 2 vértices e uma aresta
+    Arco arcos[MAX]; // O arco Ã© formado por 2 vÃ©rtices e uma aresta
 
     carregar_arquivo(cidade_origem, cidade_destino, arcos, nome_arquivo, &num_estradas);
 
-    // Para verificar se o programa está lendo o arquivo corretamente
+    // Para verificar se o programa estÃ¡ lendo o arquivo corretamente
     /*printf("Numero de estradas: %d\n\n", num_estradas);
 
     printf("Arcos:\n");
@@ -232,7 +232,7 @@ int main(){
     int origem = busca_posicao(cidade_origem, cidades, quant_cidades);
     int destino = busca_posicao(cidade_destino, cidades, quant_cidades);
 
-    //Para verificar se a matriz de adjacência está correta
+    //Para verificar se a matriz de adjacÃªncia estÃ¡ correta
     
     for(int i=0; i<quant_cidades; i++){
         for(int j=0; j<quant_cidades; j++){
@@ -241,7 +241,7 @@ int main(){
         printf("\n");
     }
 
-    //Para verificar se a matriz de adjacência está correta
+    //Para verificar se a matriz de adjacÃªncia estÃ¡ correta
     /*
     printf("Lista de cidades: ");
     for(int i=0; i<quant_cidades; i++){
@@ -249,7 +249,7 @@ int main(){
     }
     printf("\n");*/
 
-    djktra(matriz, quant_cidades, origem, destino, cidades);
+    djstrika(matriz, quant_cidades, origem, destino, cidades);
     printf("\n");
     return 0;
 }
